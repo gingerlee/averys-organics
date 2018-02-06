@@ -12,6 +12,13 @@ function App(){
     margin: 'auto'
   };
 
+  const header = {
+    gridColumn: 'span 2',
+    border: '1px solid',
+    padding: '15px',
+    textAlign: 'center',
+  };
+
   const main = {
     padding: '15px',
     border: '1px solid',
@@ -21,7 +28,12 @@ function App(){
 
   return (
     <div style={container}>
-      <header style={{gridColumn: 'span 2', border: '1px solid', padding: '15px'}}><h1>Avery's Organics</h1></header>
+      <style jsx global>{`
+        body {
+          font-family: sans-serif;
+        }
+      `}</style>
+      <header style={header}><h1>Avery's Organics</h1></header>
       <div style={main}>
         <SeasonalProduce />
       </div>
