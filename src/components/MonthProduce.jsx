@@ -6,15 +6,19 @@ function MonthProduce(props){
     <div>
       <h3>{props.month}</h3>
       <div>
-        {props.selction.map((item, i) =>
-          <div>
+        {props.selection.map((item, i) =>
+          <div key = {i}>
             {item}
-            key = {i}
           </div>
         )}
       </div>
     </div>
   );
 }
+
+MonthProduce.propTypes = {
+  month: PropTypes.string,
+  selection: PropTypes.arrayOf(PropTypes.string)
+};
 
 export default MonthProduce;

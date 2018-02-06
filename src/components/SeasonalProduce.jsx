@@ -274,7 +274,7 @@ const availableProduce = [
 function SeasonalProduce(){
   return (
     <div>
-      {SeasonalProduce.map((month, i) =>
+      {availableProduce.map((month, i) =>
         <MonthProduce month = {month.month}
           selection = {month.selection}
           key = {i} />

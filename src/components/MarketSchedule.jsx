@@ -1,7 +1,7 @@
 import React from 'react';
 import DayInfo from './DayInfo';
 
-const marketSchedule = [
+const masterMarketSchedule = [
   {
     day: 'Sunday',
     location: 'Lents International',
@@ -44,7 +44,7 @@ function MarketSchedule(){
 
   return (
     <div>
-      {marketSchedule.map((day, i) =>
+      {masterMarketSchedule.map((day, i) =>
         <DayInfo day = {day.day}
           location = {day.location}
           hours = {day.hours}
