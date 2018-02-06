@@ -33,7 +33,9 @@ function App(){
           font-family: sans-serif;
         }
       `}</style>
-      <header style={header}><h1>Avery's Organics</h1></header>
+      <header style={header}>
+        <h1>Avery's Organics</h1>
+      </header>
       <div style={main}>
         <SeasonalProduce />
       </div>
