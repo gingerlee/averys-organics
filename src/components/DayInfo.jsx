@@ -12,8 +12,7 @@ function DayInfo(props){
     display:'flex',
     flexWrap: 'wrap',
     borderBottom: '1px solid',
-    paddingBottom: '10px'
-
+    paddingBottom: '10px',
   };
   return (
     <div style={infoBox}>

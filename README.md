@@ -25,7 +25,7 @@ build
 ### Webpack Dependencies
 ```bash
 npm install webpack@3.4.0 webpack-dev-server@2.5.0 eslint eslint-plugin-react -g
-npm install react@15.5.4 react-dom@15.5.4 prop-types@15.5.10 --save
+npm install react@15.5.4 react-dom@15.5.4 prop-types@15.5.10 react-router-dom@4.0.0 --save
 ```
 
 ```bash
@@ -221,11 +221,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import { AppContainer } from 'react-hot-loader';
+import { HashRouter } from 'react-router-dom';
 
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <Component/>
+      <HashRouter>
+        <Component/>
+      </HashRouter>
     </AppContainer>,
     document.getElementById('react-app-root')
   );

@@ -272,8 +272,12 @@ const availableProduce = [
 
 
 function SeasonalProduce(){
+  const produceList = {
+    textAlign: 'center',
+    padding: '15px'
+  };
   return (
-    <div>
+    <div style={produceList}>
       {availableProduce.map((month, i) =>
         <MonthProduce month = {month.month}
           selection = {month.selection}
