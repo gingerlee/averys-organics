@@ -243,10 +243,11 @@ if (module.hot) {
   });
 }
 /*eslint-enable */
+```
 
-###App.jsx###
+### App.jsx
+```
 import React from "react";
-import ReactDOM from "react-dom";
 
 function App() {
   return (
